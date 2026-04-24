@@ -12,7 +12,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat&logo=greensock&logoColor=black)
-![License](https://img.shields.io/badge/license-MIT-blue?style=flat)
+![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat)
 
 <img src="assets/og-image.jpg" alt="Lumora Solar Preview" width="700" style="border-radius:12px;margin-top:16px"/>
 
@@ -94,73 +94,13 @@ The site communicates Lumora Solar's core offering: transparent pricing, certifi
 
 ---
 
-## Getting Started
+## Copyright & Usage
 
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/YOUR_USERNAME/lumora-website.git
-cd lumora-website
-```
-
-### 2. Open locally
-
-No build step needed. Open `index.html` directly in a browser, or serve it with any static server:
-
-```bash
-# Python (built-in)
-python3 -m http.server 3000
-
-# Node.js (npx)
-npx serve .
-```
-
-### 3. Configure the contact form
-
-The contact form uses **Web3Forms** for serverless email delivery.
-
-1. Go to [web3forms.com](https://web3forms.com) and create a free account
-2. Generate an Access Key for your email address
-3. In `index.html`, find line ~987 and replace the placeholder:
-
-```html
-<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-```
-
-That's it — no backend, no server, emails go straight to your inbox.
-
-### 4. (Optional) Self-hosted email via Node.js
-
-If you prefer to run your own mail server:
-
-```bash
-npm install
-cp .env.example .env
-# Fill in your SMTP credentials in .env
-node server.js
-```
-
-The Express server starts on port 4000 and serves the static site alongside the `/api/contact` endpoint.
-
----
-
-## Environment Variables
-
-Only needed if using the Node.js backend (`server.js`). Copy `.env.example` to `.env`:
-
-```env
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=your-gmail@gmail.com
-SMTP_PASS=xxxx-xxxx-xxxx-xxxx   # Gmail App Password
-RECIPIENT_EMAIL=your@email.com
-SENDER_NAME=Lumora Solar Website
-PORT=4000
-```
-
-> **Never commit `.env`** — it's in `.gitignore`.
-> For Gmail, use an [App Password](https://support.google.com/accounts/answer/185833) (not your regular password).
+> **This repository is shared for portfolio and demonstration purposes only.**
+>
+> Viewing the source code is permitted. Copying, cloning, redistributing, or using any part of this codebase — in whole or in part — for any other project is strictly prohibited without explicit written permission from the author.
+>
+> © 2025 Lumora Solar Private Limited · All Rights Reserved · See [LICENSE](./LICENSE)
 
 ---
 
@@ -236,5 +176,10 @@ Designed and developed by **Sohangi Singh**
 
 Made with dedication for **Lumora Solar Private Limited**
 *Empowering India, one rooftop at a time.*
+
+<br/>
+
+**© 2025 Lumora Solar Private Limited · All Rights Reserved**
+*This code is proprietary. Viewing is permitted; copying is not.*
 
 </div>
