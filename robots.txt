@@ -1,0 +1,13 @@
+# robots.txt — Lumora Solar Private Limited
+# https://www.lumorasolar.org/
+
+User-agent: *
+Allow: /
+
+# Block server-side files
+Disallow: /server.js
+Disallow: /.env
+Disallow: /package.json
+Disallow: /node_modules/
+
+Sitemap: https://www.lumorasolar.org/sitemap.xml
