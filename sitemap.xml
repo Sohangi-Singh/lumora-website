@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.lumorasolar.org/</loc>
+    <loc>https://lumora-website-tau.vercel.app/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,49 +14,49 @@
 
   <!-- Deep-link anchors (treated as separate destinations by crawlers) -->
   <url>
-    <loc>https://www.lumorasolar.org/#why-solar</loc>
+    <loc>https://lumora-website-tau.vercel.app/#why-solar</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#services</loc>
+    <loc>https://lumora-website-tau.vercel.app/#services</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#systems</loc>
+    <loc>https://lumora-website-tau.vercel.app/#systems</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#subsidy</loc>
+    <loc>https://lumora-website-tau.vercel.app/#subsidy</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#projects</loc>
+    <loc>https://lumora-website-tau.vercel.app/#projects</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#faq</loc>
+    <loc>https://lumora-website-tau.vercel.app/#faq</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.lumorasolar.org/#contact</loc>
+    <loc>https://lumora-website-tau.vercel.app/#contact</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
