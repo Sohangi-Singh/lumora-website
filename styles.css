@@ -2088,8 +2088,8 @@ ul { list-style: none; }
 .footer-logo {
     display: block;
     width: auto;
-    height: 112px;
-    max-width: 112px;
+    height: 150px;
+    max-width: 150px;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     margin-bottom: 20px;
