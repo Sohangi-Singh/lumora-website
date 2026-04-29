@@ -160,6 +160,11 @@ ul { list-style: none; }
     padding: 0 40px;
     display: flex; align-items: center; justify-content: space-between;
 }
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
 /* nav-logo-img size defined in new section below */
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-link {
@@ -2005,8 +2010,19 @@ ul { list-style: none; }
 }
 
 /* ===== ENLARGED NAV LOGO ===== */
-.nav-logo-img { height: 60px; transition: var(--transition); }
-.navbar.scrolled .nav-logo-img { height: 46px; }
+.nav-logo-img {
+    display: block;
+    width: auto;
+    height: 64px;
+    max-width: 64px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    transition: var(--transition);
+}
+.navbar.scrolled .nav-logo-img {
+    height: 52px;
+    max-width: 52px;
+}
 
 /* ===== SECTION LOGO (brand watermark) ===== */
 .section-logo {
@@ -2069,7 +2085,16 @@ ul { list-style: none; }
 }
 
 /* ===== FOOTER LOGO ENLARGED ===== */
-.footer-logo { height: 80px; margin-bottom: 20px; }
+.footer-logo {
+    display: block;
+    width: auto;
+    height: 112px;
+    max-width: 112px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 16px rgba(247,166,0,0.18));
+}
 
 /* ===== DESIGNED BY CREDIT ===== */
 .designed-by {
