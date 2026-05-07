@@ -1,0 +1,27 @@
+{
+  "name": "Lumora Solar Private Limited",
+  "short_name": "Lumora Solar",
+  "description": "India's trusted rooftop solar EPC company. Residential, commercial & industrial solar installations across India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e17",
+  "theme_color": "#0a0e17",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "scope": "/",
+  "categories": ["business", "utilities"],
+  "icons": [
+    {
+      "src": "assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

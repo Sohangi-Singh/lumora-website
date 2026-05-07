@@ -11,14 +11,23 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Lumora Solar Private Limited">
     <meta name="theme-color" content="#0a0e17">
-    <link rel="canonical" href="https://lumora-website-tau.vercel.app/">
+    <meta name="rating" content="general">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="application-name" content="Lumora Solar">
+    <link rel="canonical" href="https://lumorasolar.in/">
+
+    <!-- ══ Geo Tags ══════════════════════════════════════════════════════════ -->
+    <meta name="geo.region" content="IN-CT">
+    <meta name="geo.placename" content="Raipur, Chhattisgarh, India">
+    <meta name="geo.position" content="21.2514;81.6296">
+    <meta name="ICBM" content="21.2514, 81.6296">
 
     <!-- ══ Open Graph ════════════════════════════════════════════════════════ -->
     <meta property="og:type"        content="website">
-    <meta property="og:url"         content="https://lumora-website-tau.vercel.app/">
+    <meta property="og:url"         content="https://lumorasolar.in/">
     <meta property="og:title"       content="Lumora Solar | Rooftop Solar Installation Across India">
     <meta property="og:description" content="27+ years · 35+ MW installed. Trusted solar EPC company for homes, businesses &amp; industries across India. Subsidies up to ₹78,000. Free site survey.">
-    <meta property="og:image"       content="https://lumora-website-tau.vercel.app/assets/og-image.jpg">
+    <meta property="og:image"       content="https://lumorasolar.in/assets/og-image.jpg">
     <meta property="og:image:width"  content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt"   content="Lumora Solar — Rooftop Solar Installation India">
@@ -27,10 +36,16 @@
 
     <!-- ══ Twitter Card ═════════════════════════════════════════════════════ -->
     <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:url"         content="https://lumora-website-tau.vercel.app/">
+    <meta name="twitter:url"         content="https://lumorasolar.in/">
     <meta name="twitter:title"       content="Lumora Solar | Rooftop Solar Installation Across India">
     <meta name="twitter:description" content="27+ years · 35+ MW installed. Trusted solar EPC for homes, businesses & industries. Subsidies up to ₹78,000. Free site survey.">
-    <meta name="twitter:image"       content="https://lumora-website-tau.vercel.app/assets/og-image.jpg">
+    <meta name="twitter:image"       content="https://lumorasolar.in/assets/og-image.jpg">
+
+    <!-- ══ Apple / PWA ══════════════════════════════════════════════════════ -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Lumora Solar">
+    <link rel="manifest" href="manifest.json">
 
     <!-- ══ Favicons ═════════════════════════════════════════════════════════ -->
     <link rel="icon"             type="image/png" sizes="32x32"   href="assets/favicon-32.png?v=2">
@@ -43,19 +58,63 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "WebSite",
+          "@id": "https://lumorasolar.in/#website",
+          "url": "https://lumorasolar.in/",
+          "name": "Lumora Solar",
+          "description": "India's trusted rooftop solar EPC company for residential, commercial & industrial solar installations.",
+          "publisher": { "@id": "https://lumorasolar.in/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://lumorasolar.in/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://lumorasolar.in/#webpage",
+          "url": "https://lumorasolar.in/",
+          "name": "Lumora Solar | Solar Panel Installation India | Rooftop Solar EPC Company",
+          "description": "Lumora Solar — India's trusted rooftop solar EPC company. Residential, commercial & industrial solar installations across India. 27+ years · 35+ MW installed.",
+          "isPartOf": { "@id": "https://lumorasolar.in/#website" },
+          "about": { "@id": "https://lumorasolar.in/#organization" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://lumorasolar.in/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "breadcrumb": { "@id": "https://lumorasolar.in/#breadcrumb" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://lumorasolar.in/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lumorasolar.in/"
+            }
+          ]
+        },
+        {
           "@type": ["Organization", "LocalBusiness"],
-          "@id": "https://www.lumorasolar.org/#organization",
+          "@id": "https://lumorasolar.in/#organization",
           "name": "Lumora Solar Private Limited",
           "alternateName": "Lumora Solar",
           "legalName": "Lumora Solar Private Limited",
-          "url": "https://www.lumorasolar.org/",
+          "url": "https://lumorasolar.in/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.lumorasolar.org/assets/logo.png",
+            "url": "https://lumorasolar.in/assets/logo.png",
             "width": 300,
             "height": 100
           },
-          "image": "https://www.lumorasolar.org/assets/og-image.jpg",
+          "image": "https://lumorasolar.in/assets/og-image.jpg",
           "description": "Lumora Solar Private Limited is a leading solar EPC company in India offering residential rooftop solar, commercial solar, industrial and institutional solar installations. 27+ years of experience, 35+ MW installed capacity, serving PAN India.",
           "telephone": "+919981036737",
           "email": "deepaksingh@lumorasolar.org",
@@ -77,6 +136,18 @@
             "name": "India"
           },
           "priceRange": "₹₹₹",
+          "sameAs": [
+            "https://www.instagram.com/lumorasolar",
+            "https://www.linkedin.com/company/lumorasolar",
+            "https://www.facebook.com/lumorasolar"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919981036737",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+          },
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -116,7 +187,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://www.lumorasolar.org/#faq",
+          "@id": "https://lumorasolar.in/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -180,9 +251,14 @@
     }
     </script>
 
-    <!-- ══ Google Fonts ══════════════════════════════════════════════════════ -->
+    <!-- ══ Resource Hints ═══════════════════════════════════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="assets/logo.png" as="image" type="image/png">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- ══ Google Fonts ══════════════════════════════════════════════════════ -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ══ Three.js (defer — loads async, executes in order after parse) ════ -->
