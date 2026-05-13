@@ -1099,13 +1099,31 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text"  id="formBill"    name="Monthly Electricity Bill" placeholder=" ">
-                            <label for="formBill">Monthly Electricity Bill (&#8377;)</label>
-                        </div>
-                        <div class="form-group">
                             <textarea          id="formMessage" name="Message" rows="4" placeholder=" "></textarea>
                             <label for="formMessage">Your Message (Optional)</label>
                         </div>
+
+                        <div class="form-file-group">
+                            <p class="file-field-label">Latest Electricity Bill <span class="file-optional">(Optional)</span></p>
+                            <label class="file-upload-area" for="formElecBill">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <span class="file-upload-hint">Upload JPG / JPEG / PDF &nbsp;·&nbsp; max 5 MB</span>
+                                <span class="file-upload-name" id="elecBillName">No file chosen</span>
+                                <input type="file" id="formElecBill" name="Latest Electricity Bill" accept=".jpg,.jpeg,.pdf" onchange="updateFileName(this,'elecBillName')">
+                            </label>
+                        </div>
+
+                        <div class="form-file-group">
+                            <p class="file-field-label">Last 1 Year Month-wise Electricity Consumption <span class="file-optional">(Optional)</span></p>
+                            <p class="file-field-sublabel">Available on your electricity provider's app or portal</p>
+                            <label class="file-upload-area" for="formConsumption">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <span class="file-upload-hint">Screenshot or export &nbsp;·&nbsp; JPG / PDF / PNG / Excel / CSV</span>
+                                <span class="file-upload-name" id="consumptionName">No file chosen</span>
+                                <input type="file" id="formConsumption" name="Year Consumption Data" accept=".jpg,.jpeg,.pdf,.png,.xlsx,.xls,.csv" onchange="updateFileName(this,'consumptionName')">
+                            </label>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-glow btn-full">
                             <span>Request Free Consultation</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>

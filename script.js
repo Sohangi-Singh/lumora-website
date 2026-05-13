@@ -2,6 +2,15 @@
    LUMORA SOLAR - IMMERSIVE WEBSITE JS
    ============================== */
 
+function updateFileName(input, spanId) {
+    const span = document.getElementById(spanId);
+    if (input.files && input.files[0]) {
+        span.textContent = input.files[0].name;
+    } else {
+        span.textContent = 'No file chosen';
+    }
+}
+
 // Wait for DOM
 document.addEventListener('DOMContentLoaded', () => {
 

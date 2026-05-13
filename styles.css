@@ -1749,6 +1749,61 @@ ul { list-style: none; }
 }
 .form-group select:focus { border-color: var(--accent); }
 
+/* ===== FILE UPLOAD FIELDS ===== */
+.form-file-group {
+    margin-bottom: 24px;
+}
+.file-field-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0 0 4px 2px;
+}
+.file-field-sublabel {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0 0 8px 2px;
+}
+.file-optional {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+.file-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 16px;
+    border: 1.5px dashed var(--border-color);
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.03);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+.file-upload-area:hover,
+.file-upload-area:focus-within {
+    border-color: var(--accent);
+    background: rgba(247,166,0,0.04);
+}
+.file-upload-area svg {
+    color: var(--accent);
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+.file-upload-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+.file-upload-name {
+    font-size: 0.82rem;
+    color: var(--accent);
+    font-weight: 500;
+    word-break: break-all;
+}
+.file-upload-area input[type="file"] {
+    display: none;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: var(--bg-primary);
